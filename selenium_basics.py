@@ -10,7 +10,7 @@ if os.name == "nt": # windows
 else:
     webdriver_path = "" # Add in binaries and paths for linux/mac
 
-driver = webdriver.Chrome()
+driver = webdriver.Chrome(webdriver_path)
 
 # Step 3 get a webpage
 driver.get("https://google.com") 
